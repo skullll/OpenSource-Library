@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/my_Profile_Pic"
+                android:layout_width="175dp"
+                android:layout_height="175dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:src="@drawable/profile"/>
+
+            <TextView
+                android:id="@+id/my_profile_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="profile name"
+                android:layout_below="@id/my_Profile_Pic"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/my_profile_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="username"
+                android:layout_below="@id/my_profile_fullname"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                android:textSize="20sp"></TextView>
+
+            <TextView
+                android:id="@+id/my_profile_aboutyou"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="about you"
+                android:layout_below="@id/my_profile_username"
+                android:layout_marginTop="30dp"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:autoLink="web"></TextView>
+
+            <TextView
+                android:id="@+id/my_profile_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="phone"
+                android:layout_below="@id/my_profile_aboutyou"
+                android:layout_marginTop="20dp"
+                android:textAlignment="center"
+                android:autoLink="phone"
+                android:textIsSelectable="true"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/my_profile_Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="email id"
+                android:layout_below="@id/my_profile_phone"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                android:autoLink="email"
+                android:textIsSelectable="true"></TextView>
+
+            <TextView
+                android:id="@+id/my_profile_country"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="country"
+                android:layout_below="@id/my_profile_Email"
+                android:layout_marginTop="10dp"
+                android:textAlignment="center"
+                android:textSize="18sp"></TextView>
+
+            <TextView
+                android:id="@+id/my_profile_dob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="dob"
+                android:layout_below="@id/my_profile_country"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="50dp"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/my_profile_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gender"
+                android:layout_below="@id/my_profile_country"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="50dp"
+                android:textSize="18sp"
+                android:layout_alignParentRight="true"
+                ></TextView>
+
+            <TextView
+                android:id="@+id/my_profile_education"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="education"
+                android:layout_below="@id/my_profile_country"
+                android:layout_marginTop="50dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:textSize="18sp"
+                ></TextView>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
